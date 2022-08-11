@@ -9,9 +9,8 @@ jobs:
       - name: pulling git repo
         uses: actions/checkout@v2
       - name: Install Python v3
-        uses: actions/setup=python@v2
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
+          python-version: '3.10'
       - name: install all requirements
         run : pip install -r requirements.txt
-        
