@@ -51,12 +51,12 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: deploying to Heroku
-        uses: behe/heroku-build@v1.1 # This is the action
-        with:
-          api_key: ${{secrets.HEROKU_API_KEY}}
-          app_name: ${{secrets.HEROKU_APP_NAME}}
-          path: "/home/runner/work/heroku-build"
+      # - name: deploying to Heroku
+      #   uses: behe/heroku-build@v1.1 # This is the action
+      #   with:
+      #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+      #     heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+      #     heroku_email: ${{secrets.HEROKU_EMAIL}}
 
       - name: deploy to ubuntu server
         uses: appleboy/ssh-action@master
