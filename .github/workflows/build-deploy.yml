@@ -54,8 +54,8 @@ jobs:
       - name: deploying to Heroku
         uses: behe/heroku-build@v1.1 # This is the action
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          api_key: ${{secrets.HEROKU_API_KEY}}
+          app_name: ${{secrets.HEROKU_APP_NAME}}
       - name: deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
