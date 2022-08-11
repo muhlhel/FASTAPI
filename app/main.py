@@ -24,4 +24,4 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 @app.get("/")
 def root():
-    return {"message": "Welcom To API World by FASAPI It is sample only"}
+    return {"message": "Welcom To FASTAPI World"}
