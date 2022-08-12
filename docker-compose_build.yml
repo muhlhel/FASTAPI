@@ -1,7 +1,7 @@
 version: "3"
 services:
   api:
-    image: muhlhel/fastapi:best
+    build: .
     ports:
       - 8000:8000
     volumes:
